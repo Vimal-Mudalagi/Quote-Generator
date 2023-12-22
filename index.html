@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="quote-box">
+        <h2>Quote of the day</h2>
+        <blockquote id="quote">Loading...</blockquote>
+        <span id="author">Loading...</span>
+    </div>
+
+    <div class="buttons">
+        <div class="features">
+            <ul>
+               <li class="volume"><i class="fas fa-volume-up"></i></li>
+                <li class="copy"><i class="fa-solid fa-copy" onclick="copy()"></i></li>
+                <li class="X"><i class="fa-brands fa-x-twitter" onclick="post()"></i></li>
+            </ul>
+            <button onclick="getquote(api_url)">New Quote</button>
+        </div>
+    </div>
+  
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

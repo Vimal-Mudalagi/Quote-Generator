@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Roboto+Serif:opsz@8..144&family=Roboto:ital,wght@0,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Serif', serif;
+}
+
+body {
+    background-color: #A367B1;
+}
+
+.quote-box {
+    background: white;
+    width: 800px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.6);
+    height: 25rem;
+}
+
+.quote-box h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    position: relative;
+
+}
+
+.quote-box h2::after {
+    content: '';
+    width: 130px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #A367B1;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    /* Horizaontally centre */
+    transform: translate(-50%);
+
+}
+
+.quote-box blockquote {
+    font-size: 28px;
+    min-height: 115px;
+}
+
+.quote-box blockquote::before,
+.quote-box blockquote::after {
+    content: '"';
+}
+
+.quote-box span {
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+
+.quote-box span::before {
+    content: '';
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    background: #A367B1;
+    top: 50%;
+    left: -30px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 29rem;
+    position: relative;
+    
+
+}
+
+.features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.features ul {
+    display: flex;
+    
+}
+
+.features ul li {
+    list-style: none;
+    margin: 0 5px;
+    height: 50px;
+    width: 50px;
+    border: 2px solid #A367B1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transform: all 0.5s ease;
+
+}
+.features ul li:hover{
+    color: white;
+    background: #A367B1;
+}
+
+.features button {
+    border: none;
+    outline: none;
+    background: #A367B1;
+    color: white;
+    font-size: 16px;
+    padding: 13px 22px;
+    border-radius: 30px;
+    cursor: pointer;
+}
